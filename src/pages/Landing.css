@@ -1,0 +1,140 @@
+.landing-page {
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.how {
+  max-width: var(--shell-max);
+  margin: 0 auto;
+  padding: 40px 20px 20px;
+}
+
+.how-head {
+  max-width: 620px;
+  margin-bottom: 44px;
+}
+
+.how-head h2 {
+  font-size: clamp(26px, 3.4vw, 36px);
+  color: var(--navy);
+  font-weight: 500;
+}
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.how-step {
+  border-top: 2px solid var(--navy);
+  padding-top: 18px;
+}
+
+.how-step-n {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--yellow-2);
+}
+
+.how-step h3 {
+  margin-top: 14px;
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.how-step p {
+  margin-top: 10px;
+  font-size: 14.5px;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+.landing-cta {
+  max-width: var(--shell-max);
+  margin: 0 auto;
+  padding: 20px 20px 100px;
+}
+
+.landing-cta-card {
+  background: var(--navy);
+  border-radius: var(--r-xl);
+  padding: 64px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-cta-card::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: var(--yellow);
+  opacity: 0.16;
+  border-radius: 50%;
+  top: -220px;
+  right: -140px;
+}
+
+.landing-cta-card h2 {
+  color: var(--white);
+  font-size: clamp(24px, 3.6vw, 34px);
+  font-weight: 500;
+  max-width: 560px;
+  position: relative;
+}
+
+.landing-cta-card p {
+  color: #b9c2d9;
+  font-size: 15.5px;
+  position: relative;
+}
+
+.landing-cta-card svg {
+  position: relative;
+}
+
+.landing-cta-card button {
+  margin-top: 8px;
+  position: relative;
+}
+
+.landing-footer {
+  max-width: var(--shell-max);
+  margin: 0 auto;
+  padding: 0 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 13.5px;
+}
+
+.landing-footer .landing-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--navy);
+}
+
+@media (max-width: 860px) {
+  .how-steps {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .landing-footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,106 @@
+.pf {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.pf-head h1 {
+  margin-top: 8px;
+  font-size: clamp(24px, 3vw, 32px);
+  color: var(--navy);
+  font-weight: 500;
+}
+
+.pf-head p {
+  margin-top: 10px;
+  color: var(--text-soft);
+  font-size: 14.5px;
+  max-width: 520px;
+}
+
+.pf-section {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 26px;
+}
+
+.pf-section h2 {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.pf-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.pf-row.three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pf-row + .pf-row {
+  margin-top: 16px;
+}
+
+.pf-field {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.pf-field span {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+
+.pf-field input,
+.pf-field select,
+.pf-field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border);
+  background: var(--cream);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pf-field textarea {
+  min-height: 78px;
+  resize: vertical;
+}
+
+.pf-field input:focus,
+.pf-field select:focus,
+.pf-field textarea:focus {
+  border-color: var(--navy);
+  box-shadow: 0 0 0 3px rgba(22, 34, 62, 0.08);
+  background: var(--paper);
+}
+
+.pf-section .pf-field + .pf-field {
+  margin-top: 16px;
+}
+
+.pf-submit {
+  align-self: flex-start;
+}
+
+@media (max-width: 640px) {
+  .pf-row,
+  .pf-row.three {
+    grid-template-columns: 1fr;
+  }
+}

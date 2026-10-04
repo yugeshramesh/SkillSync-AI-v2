@@ -1,0 +1,138 @@
+.shell {
+  min-height: 100vh;
+  background: var(--bg);
+  background-image: radial-gradient(circle at 100% 0%, var(--cream-2) 0%, var(--bg) 45%);
+}
+
+.shell-top {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  padding: 20px 20px 0;
+}
+
+.shell-top-inner {
+  max-width: var(--shell-max);
+  margin: 0 auto;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  padding: 10px 12px 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.shell-logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--navy);
+  flex-shrink: 0;
+}
+
+.shell-nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--cream);
+  border-radius: var(--r-pill);
+  padding: 4px;
+  margin: 0 auto;
+}
+
+.shell-nav-item {
+  position: relative;
+  padding: 9px 18px;
+  border-radius: var(--r-pill);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-soft);
+}
+
+.shell-nav-item span:not(.shell-nav-pill) {
+  position: relative;
+  z-index: 1;
+}
+
+.shell-nav-item .is-active {
+  color: var(--yellow-soft);
+}
+
+.shell-nav-pill {
+  position: absolute;
+  inset: 0;
+  background: var(--navy);
+  border-radius: var(--r-pill);
+  z-index: 0;
+}
+
+.shell-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.shell-icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--paper);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.shell-icon-btn:hover {
+  background: var(--cream);
+  transform: translateY(-1px);
+}
+
+.shell-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.shell-main {
+  max-width: var(--shell-max);
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+}
+
+@media (max-width: 860px) {
+  .shell-nav {
+    display: none;
+  }
+  .shell-top-inner {
+    padding: 10px 10px 10px 16px;
+  }
+}
+
+.shell-live-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--muted-2);
+  flex-shrink: 0;
+}
+
+.shell-live-dot.on {
+  background: var(--teal);
+  box-shadow: 0 0 0 3px var(--teal-soft);
+}

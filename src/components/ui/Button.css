@@ -1,0 +1,65 @@
+.ss-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  border-radius: var(--r-pill);
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.ss-btn-md {
+  padding: 13px 24px;
+  font-size: 14.5px;
+}
+
+.ss-btn-sm {
+  padding: 9px 16px;
+  font-size: 13px;
+}
+
+.ss-btn-lg {
+  padding: 16px 30px;
+  font-size: 16px;
+}
+
+.ss-btn-primary {
+  background: var(--navy);
+  color: var(--yellow-soft);
+  box-shadow: var(--shadow-navy);
+}
+
+.ss-btn-accent {
+  background: var(--yellow);
+  color: var(--navy);
+  box-shadow: 0 10px 26px rgba(243, 189, 61, 0.45);
+}
+
+.ss-btn-ghost {
+  background: transparent;
+  color: var(--navy);
+  border-color: var(--border);
+}
+
+.ss-btn-ghost:hover {
+  background: var(--surface);
+}
+
+.ss-btn-subtle {
+  background: var(--surface);
+  color: var(--navy);
+  border-color: var(--border);
+}
+
+.ss-btn-danger {
+  background: transparent;
+  color: var(--coral);
+  border-color: var(--coral-soft);
+}
+
+.ss-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}

@@ -1,0 +1,145 @@
+.mt {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.mt-empty {
+  text-align: center;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.mt-empty h1 {
+  color: var(--navy);
+  font-weight: 500;
+}
+
+.mt-empty p {
+  color: var(--text-soft);
+  max-width: 380px;
+}
+
+.mt-hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  padding: 32px;
+}
+
+.mt-hero h1 {
+  margin-top: 8px;
+  font-size: clamp(22px, 2.8vw, 30px);
+  color: var(--navy);
+  font-weight: 500;
+}
+
+.mt-hero p {
+  margin-top: 10px;
+  color: var(--text-soft);
+  font-size: 14.5px;
+}
+
+.mt-hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.mt-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.mt-panel {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 24px;
+}
+
+.mt-panel h4 {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.mt-dl div {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 13px;
+}
+
+.mt-dl div:last-child {
+  border-bottom: none;
+}
+
+.mt-dl dt {
+  color: var(--muted);
+}
+
+.mt-dl dd {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.mt-chip-wrap {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.mt-reason-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mt-reason-list li {
+  font-size: 13.5px;
+  color: var(--text);
+  padding-left: 16px;
+  position: relative;
+}
+
+.mt-reason-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--yellow-2);
+}
+
+.mt-plain {
+  font-size: 13.5px;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .mt-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mt-hero-actions {
+    justify-content: center;
+  }
+  .mt-grid {
+    grid-template-columns: 1fr;
+  }
+}

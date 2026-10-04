@@ -1,0 +1,10 @@
+.chat-shell {
+  display: flex;
+  height: calc(100vh - 150px);
+  min-height: 520px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
