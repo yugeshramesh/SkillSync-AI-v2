@@ -26,7 +26,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://skill-sync-ai-ten.vercel.app",
+  "https://skill-sync-ai-v2.vercel.app",
 ];
 
 app.use(
@@ -71,7 +71,7 @@ app.use("/api/connections", connectionRoutes);
 app.get("/", (req, res) => {
   res.json({
     success: true,
-    message: "🚀 SkillSync AI Backend Running Successfully",
+    message: " SkillSync AI Backend Running Successfully",
   });
 });
 
