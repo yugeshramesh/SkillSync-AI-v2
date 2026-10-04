@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://skillsync-backend-ten.vercel.app/api",
+  baseURL: "https://skillsync-ai-v2.onrender.com/api",
 });
 
 // ---------------- AUTH ----------------

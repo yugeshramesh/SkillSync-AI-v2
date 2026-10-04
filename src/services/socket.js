@@ -1,6 +1,6 @@
 import { io } from "socket.io-client";
 
-const SOCKET_URL = "https://skillsync-backend-ten.vercel.app";
+const SOCKET_URL = "https://skillsync-ai-v2.onrender.com";
 
 let socket = null;
 
